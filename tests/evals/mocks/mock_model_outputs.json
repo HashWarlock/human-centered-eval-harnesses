@@ -1,0 +1,39 @@
+{
+  "cls_exact_pass": "positive",
+  "cls_exact_fail": "positive",
+  "cls_normalized_pass": " blue ",
+  "gen_quality_pass": "A harness makes evaluation repeatable.",
+  "gen_quality_fail": "This answer ignores the prompt.",
+  "gen_json_fail": "{\"answer\": \"ok\"",
+  "rag_grounded_pass": {
+    "answer": "red",
+    "evidence": "The ball is red and on the table."
+  },
+  "rag_hallucinated_fail": {
+    "answer": "blue",
+    "evidence": "The ball is blue and floating."
+  },
+  "rag_evidence_gap_fail": {
+    "answer": "Alex",
+    "evidence": "Alex wrote the memo."
+  },
+  "tool_correct_pass": {
+    "tool": "weather",
+    "args": {
+      "city": "Chicago"
+    }
+  },
+  "tool_wrong_name_fail": {
+    "tool": "forecast",
+    "args": {
+      "city": "Chicago"
+    }
+  },
+  "tool_wrong_args_fail": {
+    "tool": "weather",
+    "args": {
+      "city": "Boston"
+    }
+  }
+}
+

@@ -1,0 +1,72 @@
+{
+  "gen_quality_pass": {
+    "reasoning": "The answer directly matches the labeled reference.",
+    "scores": {
+      "rubric_score": 1.0
+    },
+    "passed": true
+  },
+  "gen_quality_fail": {
+    "reasoning": "The answer is off-topic and does not match the labeled reference.",
+    "scores": {
+      "rubric_score": 0.0
+    },
+    "passed": false
+  },
+  "gen_json_fail": {
+    "reasoning": "The payload is malformed JSON, so structured validation fails first.",
+    "scores": {
+      "rubric_score": 0.0
+    },
+    "passed": false
+  },
+  "rag_grounded_pass": {
+    "reasoning": "The answer and evidence are both supported by the provided context.",
+    "scores": {
+      "groundedness": 1.0,
+      "answer_correctness": 1.0
+    },
+    "passed": true
+  },
+  "rag_hallucinated_fail": {
+    "reasoning": "The answer contradicts the context and introduces unsupported evidence.",
+    "scores": {
+      "groundedness": 0.0,
+      "answer_correctness": 0.0
+    },
+    "passed": false
+  },
+  "rag_evidence_gap_fail": {
+    "reasoning": "The answer names an author even though the context says the memo was unsigned.",
+    "scores": {
+      "groundedness": 0.0,
+      "answer_correctness": 0.0
+    },
+    "passed": false
+  },
+  "tool_correct_pass": {
+    "reasoning": "The selected tool and arguments match the labeled tool call.",
+    "scores": {
+      "tool_selection": 1.0,
+      "argument_correctness": 1.0
+    },
+    "passed": true
+  },
+  "tool_wrong_name_fail": {
+    "reasoning": "The tool name is wrong even though the city argument is plausible.",
+    "scores": {
+      "tool_selection": 0.0,
+      "argument_correctness": 1.0
+    },
+    "passed": false
+  },
+  "tool_wrong_args_fail": {
+    "reasoning": "The tool is correct, but the city argument does not match the expected call.",
+    "scores": {
+      "tool_selection": 1.0,
+      "argument_correctness": 0.0
+    },
+    "passed": false
+  }
+}
+

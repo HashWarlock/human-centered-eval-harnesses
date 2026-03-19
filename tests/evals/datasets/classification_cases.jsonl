@@ -1,0 +1,4 @@
+{"case_id":"cls_exact_pass","task_type":"classification","input":{"text":"Review: the service was perfect."},"expected":"positive","tags":["classification","positive"],"metadata":{"reason":"Correct label should pass exact match.","expected_pass":true,"match_type":"exact"}}
+{"case_id":"cls_exact_fail","task_type":"classification","input":{"text":"Review: the service was perfect."},"expected":"negative","tags":["classification","negative"],"metadata":{"reason":"Wrong label should fail exact match.","expected_pass":false,"match_type":"exact"}}
+{"case_id":"cls_normalized_pass","task_type":"classification","input":{"text":"What color is the sky on a clear day?"},"expected":"Blue","tags":["classification","adversarial"],"metadata":{"reason":"Whitespace and casing near-miss should pass normalized exact match.","expected_pass":true,"match_type":"normalized"}}
+

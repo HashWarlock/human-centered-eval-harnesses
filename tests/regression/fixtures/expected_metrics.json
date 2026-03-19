@@ -1,0 +1,36 @@
+{
+  "total_cases": 3,
+  "passed_cases": 2,
+  "failed_cases": 1,
+  "pass_rate": 0.6666666666666666,
+  "average_scores": {
+    "exact_match": 0.6666666666666666,
+    "normalized_exact_match": 0.6666666666666666,
+    "contains_match": 0.6666666666666666
+  },
+  "by_task_type": {
+    "classification": {
+      "total_cases": 2,
+      "passed_cases": 1,
+      "failed_cases": 1,
+      "pass_rate": 0.5,
+      "average_scores": {
+        "exact_match": 0.5,
+        "normalized_exact_match": 0.5,
+        "contains_match": 0.5
+      }
+    },
+    "generation": {
+      "total_cases": 1,
+      "passed_cases": 1,
+      "failed_cases": 0,
+      "pass_rate": 1.0,
+      "average_scores": {
+        "exact_match": 1.0,
+        "normalized_exact_match": 1.0,
+        "contains_match": 1.0
+      }
+    }
+  }
+}
+

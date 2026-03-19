@@ -1,0 +1,54 @@
+[
+  {
+    "case_id": "golden-classification-pass",
+    "task_type": "classification",
+    "actual": "positive",
+    "expected": "positive",
+    "scores": {
+      "exact_match": 1.0,
+      "normalized_exact_match": 1.0,
+      "contains_match": 1.0
+    },
+    "passed": true,
+    "error": null,
+    "metadata": {
+      "latency_ms": 0.1,
+      "raw_output": "positive"
+    }
+  },
+  {
+    "case_id": "golden-classification-fail",
+    "task_type": "classification",
+    "actual": "negative",
+    "expected": "positive",
+    "scores": {
+      "exact_match": 0.0,
+      "normalized_exact_match": 0.0,
+      "contains_match": 0.0
+    },
+    "passed": false,
+    "error": null,
+    "metadata": {
+      "latency_ms": 0.2,
+      "raw_output": "negative"
+    }
+  },
+  {
+    "case_id": "golden-generation-pass",
+    "task_type": "generation",
+    "actual": "A harness makes evaluation repeatable.",
+    "expected": "A harness makes evaluation repeatable.",
+    "scores": {
+      "exact_match": 1.0,
+      "normalized_exact_match": 1.0,
+      "contains_match": 1.0
+    },
+    "passed": true,
+    "error": null,
+    "metadata": {
+      "latency_ms": 0.3,
+      "raw_output": "A harness makes evaluation repeatable."
+    }
+  }
+]
+

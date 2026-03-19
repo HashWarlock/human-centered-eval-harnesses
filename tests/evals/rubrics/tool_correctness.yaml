@@ -1,0 +1,8 @@
+name: tool_correctness
+description: Deterministic starter rubric for tool call selection and argument correctness.
+criteria:
+  - name: tool_selection
+    description: Whether the model chose the right tool.
+  - name: argument_correctness
+    description: Whether the tool arguments match the expected payload.
+

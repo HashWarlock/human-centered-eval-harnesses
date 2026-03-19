@@ -1,0 +1,10 @@
+name: answer_quality
+description: Deterministic starter rubric for free-form answers and RAG outputs.
+criteria:
+  - name: rubric_score
+    description: Overall answer quality for deterministic examples.
+  - name: groundedness
+    description: Whether the answer is supported by provided context.
+  - name: answer_correctness
+    description: Whether the answer matches the labeled expectation.
+
